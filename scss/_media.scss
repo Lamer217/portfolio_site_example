@@ -19,7 +19,11 @@
   }
 }
 
+// PHONES
 @media (max-width: 450px) {
+  * {
+    overflow-x: clip;
+  }
   // HOME
   #main-nav {
     flex-direction: column;
@@ -79,6 +83,10 @@
         &:last-child {
           border: none;
         }
+      }
+
+      .process-icon {
+        overflow: visible !important;
       }
     }
   }
@@ -168,6 +176,7 @@
       gap: 1.5rem;
       box-shadow: none;
       padding-bottom: 0.7rem;
+      overflow: visible;
 
       .item {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
