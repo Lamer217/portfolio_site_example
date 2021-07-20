@@ -1,0 +1,243 @@
+// TABLETS
+@media (max-width: 770px) {
+  // HOME
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 22.5%;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  //   WORK
+  #work-a {
+    padding: 5.375rem 0;
+  }
+}
+
+@media (max-width: 450px) {
+  // HOME
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    ul li {
+      padding: 1rem 1.3rem;
+    }
+  }
+
+  //   HEADER
+  #header-home {
+    box-shadow: 0 2px 4px 3px grey;
+    background-position: 20% 30%;
+    .header-content {
+      h1 {
+        display: flex;
+        flex-direction: column;
+
+        .txt-type {
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  #home-a .specials div {
+    border-bottom: 2px solid $light-color;
+    padding-bottom: 0.5rem;
+
+    &:last-child {
+      border: none;
+      padding-bottom: 0;
+    }
+  }
+
+  #home-b {
+    padding: 0 0;
+
+    .stats {
+      div {
+        padding: 1.5rem 0;
+      }
+    }
+  }
+
+  #home-c {
+    padding: 1rem 0;
+
+    .process {
+      gap: 0.5rem;
+      div {
+        border-bottom: 2px solid $light-color;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+
+  // ABOUT
+  #header-inner {
+    height: 10rem;
+  }
+
+  #about-a {
+    padding: 1rem 0;
+
+    .about-info {
+      grid-template-areas:
+        'bioimage'
+        'bio'
+        'aw1'
+        'aw2'
+        'aw3';
+
+      .award-1,
+      .award-2 {
+        border-bottom: solid 2px $light-color;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    .lead {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  #about-b {
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  #about-c {
+    display: none;
+    padding: 0.5rem 0;
+    .about-logos {
+      align-items: center;
+      align-content: center;
+    }
+  }
+
+  #about-d {
+    padding: 1.5rem 0;
+
+    .lead {
+      margin-bottom: 1.5rem;
+    }
+
+    .testimonials {
+      gap: 1.5rem;
+
+      div {
+        border: 1px solid $medium-color;
+        border-radius: 5px;
+
+        p {
+          border: none !important;
+        }
+
+        ul {
+          margin-top: 0 !important;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+
+  //   STACK GRID COLUMNS
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #about-c .about-logos,
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  // WORK
+  #work-a {
+    padding: 1.5rem 0 2rem 0;
+
+    .items {
+      gap: 1.5rem;
+      box-shadow: none;
+      padding-bottom: 0.7rem;
+
+      .item {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+  //FOOTER
+  #main-footer {
+    padding: 1rem;
+    width: 100vw;
+
+    .footer-content {
+      flex-direction: column-reverse;
+    }
+  }
+
+  //   CONTACT
+  #contact-a {
+    padding: 1.5rem 0;
+    .container {
+      form {
+        .text-fields {
+          grid-template-areas:
+            'name'
+            'email'
+            'phone'
+            'subject'
+            'message';
+        }
+
+        button {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  #contact-b {
+    padding: 1rem;
+    .container {
+      .contact-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        div {
+          border-bottom: 1px dashed $dark-tint-color;
+          padding-bottom: 0.5rem;
+
+          &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  #contact-c {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+// LANDSCAPE MEDIA
+@media (max-height: 400px) {
+  #header-home {
+    .header-content {
+      padding-top: 10%;
+    }
+  }
+}
