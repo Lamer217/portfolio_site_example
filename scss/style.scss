@@ -358,6 +358,7 @@ img {
   background-color: $dark-color;
   color: #fff;
   height: 5rem;
+  display: flex;
 
   .footer-content {
     display: flex;
@@ -379,6 +380,10 @@ img {
         background-color: $main-color;
         cursor: pointer;
       }
+    }
+
+    p {
+      text-align: center;
     }
   }
 }

@@ -184,16 +184,6 @@
     }
   }
 
-  //FOOTER
-  #main-footer {
-    padding: 1rem;
-    width: 100vw;
-
-    .footer-content {
-      flex-direction: column-reverse;
-    }
-  }
-
   //   CONTACT
   #contact-a {
     padding: 1.5rem 0;
@@ -238,6 +228,25 @@
   #contact-c {
     h1 {
       font-size: 2rem;
+    }
+  }
+}
+
+//FOOTER
+#main-footer {
+  padding: 1rem;
+
+  .footer-content {
+    flex-direction: column-reverse;
+    width: 100%;
+
+    .social {
+      display: flex;
+      width: 90%;
+      justify-content: space-around;
+      .fab {
+        margin: 0 !important;
+      }
     }
   }
 }
